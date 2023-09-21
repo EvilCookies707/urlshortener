@@ -40,7 +40,7 @@ export const handler = async (event, context) => {
   } catch (err) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: 'Unable to process link creation, please try again.', details: err}),
+      body: JSON.stringify({ error: 'There has been an error, please try again.', details: err}),
       headers: {
         "Content-Type": 'application/json'
       }

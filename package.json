@@ -17,6 +17,7 @@
   "homepage": "https://github.com/EvilCookies707/urlshortener#readme",
   "dependencies": {
     "@netlify/planetscale": "^1.0.0",
-    "mongodb": "^6.1.0"
+    "mongodb": "^6.1.0",
+    "nanoid": "^5.0.1"
   }
 }
