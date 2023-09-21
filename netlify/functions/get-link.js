@@ -24,6 +24,12 @@ export const handler = async (event, context) => {
 
     const link = await links.findOne(query)
 
+    if (!link) {
+      return {
+        statusCode: 404
+      }
+    }
+
     return {
       statusCode: 200,
       body: JSON.stringify(link),
